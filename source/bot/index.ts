@@ -41,6 +41,8 @@ bot.hears("ping", async (ctx) => {
 
 });
 
+bot.hears('hi', (ctx) => ctx.reply('Hey there'))
+
 bot.command('magic', async ctx => {
 	const combatResult = fightDragons();
 	const fairyThoughts = danceWithFairies();
