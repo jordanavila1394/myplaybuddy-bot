@@ -35,11 +35,10 @@ if (process.env['NODE_ENV'] !== 'production') {
 bot.command('help', async ctx => ctx.reply(ctx.t('help')));
 
 bot.hears("ping", async (ctx) => {
-	// `reply` is an alias for `sendMessage` in the same chat (see next section).
-	await ctx.reply("pong", {
-	  // `reply_to_message_id` specifies the actual reply feature.
-	  reply_to_message_id: ctx.msg.message_id,
-	});
+
+	let text = 'pong';
+	return ctx.reply(text);
+
 });
 
 bot.command('magic', async ctx => {
