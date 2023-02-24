@@ -36,7 +36,7 @@ bot.command('help', async ctx => ctx.reply(ctx.t('help')));
 
 bot.hears("ping", async (ctx) => {
 
-	let text = 'pong';
+	let text = 'ponga';
 	return ctx.reply(text);
 
 });
